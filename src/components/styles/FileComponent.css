@@ -1,0 +1,33 @@
+.file {
+  position: fixed;
+  bottom: 10px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  padding-left: 20px;
+}
+.file__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 32px 6px 8px;
+  border-radius: 50px;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302),
+    0 1px 3px 1px rgba(60, 64, 67, 0.149);
+  cursor: pointer;
+}
+.file__container > p {
+  margin-left: 14px;
+}
+
+@media (max-width: 425px) {
+  .file {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+  .file__container {
+    background-color: darkgray;
+  }
+}
